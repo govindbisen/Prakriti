@@ -49,7 +49,7 @@ function App() {
       </main>
       <footer>
         <p>
-          ©Copyright prakrati RAVI-GOVIND. All rights reversed.under
+          ©Copyright Prakriti Ravi-Govind. All rights reversed. Site under
           construction...
         </p>
         <a href="https://youtube.com/@PrakritiMPPSC">YouTube</a> <br></br>
