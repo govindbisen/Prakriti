@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+}
+
+nav {
+  display: flex;
+  background-color: aquamarine;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App-logo {
+  height: 50px;
+  width: 50px;
+}
