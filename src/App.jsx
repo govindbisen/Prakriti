@@ -48,7 +48,10 @@ function App() {
         <aside>aside</aside>
       </main>
       <footer>
-        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+        <p>
+          ©Copyright prakrati RAVI-GOVIND. All rights reversed.under
+          construction...
+        </p>
         <a href="https://youtube.com/@PrakritiMPPSC">YouTube</a> <br></br>
         <a href="https://www.facebook.com/Prakriti-MPPSC-107311648723955/">
           FaceBook
