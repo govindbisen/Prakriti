@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
-import logo from "./assets/iskon.png";
+import logo from "./assets/prakriti.jpeg";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <nav>
         <div>
-          {/* <img src={logo} className="App-logo" alt="ISKON LOGO" /> */}
+          <img src={logo} className="logo" alt="LOGO" />
           Prakriti MPPSC
         </div>
         <div>
