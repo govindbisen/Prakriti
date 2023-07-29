@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <nav>
-        <div>
+        <div className="logo-head">
           <img src={logo} className="logo" alt="LOGO" />
-          Prakriti MPPSC
+          <p> Prakriti MPPSC </p>
         </div>
         <div>
           <ul>
