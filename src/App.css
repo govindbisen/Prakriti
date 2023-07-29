@@ -1,11 +1,12 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
+
   /* margin: 0 auto; */
 }
 
 nav {
   display: flex;
-  background-color: aquamarine;
+  background-color: rgb(112, 156, 142);
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: row;
@@ -19,7 +20,7 @@ ul {
 }
 
 li {
-  padding-left: 10px;
+  padding-left: 3rem;
   text-transform: uppercase;
 }
 
