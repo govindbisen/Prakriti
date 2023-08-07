@@ -2,7 +2,16 @@ import { useState } from "react";
 
 import "./App.css";
 import logo from "./assets/prakriti.jpeg";
-import { BrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/ContactUs";
+import Zoomclass from "./Pages/Zoomclass";
+import Test from "./Pages/Test";
+import LoginSignup from "./Pages/LoginSignup";
+import Donate from "./Pages/Donate";
+
+import { Link, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -15,50 +24,49 @@ function App() {
         <div>
           <ul>
             <li>
-              <a href="#"> About</a>{" "}
+              <Link to="/about">About</Link>
             </li>
             <li>
-              {" "}
-              <a href="#"> Home </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#"> Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="#"> Zoom Classes</a>
+              <Link to="/zoomclasses">Zoom Classes</Link>
             </li>
             <li>
-              <a href="#"> Test</a>
+              <Link to="/test">Test</Link>
             </li>
             <li>
-              <a href="#"> Contacts</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a href="#"> Donate</a>
+              <Link to="/donate">Donate</Link>
             </li>
             <li>
-              <a href="#"> Login</a>
+              <Link to="/authentication">Login/SignUP</Link>
             </li>
           </ul>
         </div>
       </nav>
 
       <main>
-        <article>article</article>
-        <aside>aside</aside>
+        <article></article>
+        <aside></aside>
       </main>
-      <footer>
-        <p>
-          ©Copyright Prakriti Ravi-Govind. All rights reversed. Site under
-          construction...
-        </p>
-        <a href="https://youtube.com/@PrakritiMPPSC">YouTube</a> <br></br>
-        <a href="https://www.facebook.com/Prakriti-MPPSC-107311648723955/">
-          FaceBook
-        </a>
-        <br></br>
-        <a href="https://t.me/PrakritiMppsc">Telegram</a>
-      </footer>
+
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/zoomclasses" element={<Zoomclass />} />
+        <Route path="/test" element={<Test />} />
+        <Route path="/donate" element={<Donate />} />
+
+        <Route path="/authentication" element={<LoginSignup />} />
+      </Routes>
     </>
   );
 }

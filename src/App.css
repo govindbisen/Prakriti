@@ -6,11 +6,6 @@
 
 nav {
   display: flex;
-  background-color: rgb(112, 156, 142);
-  flex-wrap: nowrap;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 ul {
@@ -41,4 +36,10 @@ a {
 
 .logo-head {
   display: flex;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
