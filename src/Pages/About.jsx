@@ -30,8 +30,8 @@ function About() {
           ensuring a holistic preparation approach.
         </li>
         <li>
-          Effective Teaching Methodology: At [Your Coaching Name], we believe in
-          a student-centric approach to teaching. Our faculty employs innovative
+          Effective Teaching Methodology: At Prakriti-MPPSC , we believe in a
+          student-centric approach to teaching. Our faculty employs innovative
           teaching methodologies, interactive sessions, and real-life examples
           to make learning engaging and fun.
         </li>
@@ -81,22 +81,22 @@ function About() {
       </ul>
 
       <p>
-        Join Prakriti-MPPSC and Realize Your MPPSC Dreams! At [Your Coaching
-        Name], we believe that with the right guidance and determination,
-        success is within reach. Our mission is to empower aspirants like you to
-        fulfill your dreams of a career in the esteemed Madhya Pradesh Public
-        Service Commission. Join us now and embark on a journey towards a
-        brighter future.
+        Join Prakriti-MPPSC and Realize Your MPPSC Dreams! At Prakriti-MPPSC ,
+        we believe that with the right guidance and determination, success is
+        within reach. Our mission is to empower aspirants like you to fulfill
+        your dreams of a career in the esteemed Madhya Pradesh Public Service
+        Commission. Join us now and embark on a journey towards a brighter
+        future.
       </p>
 
       <p>
-        Take the first step towards success today. Enroll in [Your Coaching
-        Name] and let's conquer the MPPSC exam together!
+        Take the first step towards success today. Enroll in Prakriti-MPPSC and
+        let's conquer the MPPSC exam together!
       </p>
 
       <p>
         For further information or to book a free counseling session, contact us
-        at [Contact Details].
+        at Prakriti-MPPSC .
       </p>
 
       <p>Prakriti-MPPSC - Your Gateway to MPPSC Success!</p>
