@@ -4,8 +4,11 @@ import connectDB from "./config/db.js";
 import authRoute from './routes/auth.js';
 
 const app = express()
+import cors from "cors";
+
 app.use(json());
 connectDB();
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
