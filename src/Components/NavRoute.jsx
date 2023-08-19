@@ -9,7 +9,7 @@ import Test from "../Pages/Test";
 import AuthPage from '../Pages/AuthPage';
 import Donate from "../Pages/Donate";
 import Register from '../Pages/Register';
-import Login from "../Pages/Login"
+import LoginForm from "../Pages/Login"
 
 function NavRoute() {
     const routes = [
@@ -29,8 +29,8 @@ function NavRoute() {
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
       <Route path="/authentication" element={<AuthPage />}>
-        <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
+         <Route path="signup" element={<Register />} />
+        <Route path="login" element={<LoginForm />} />
       </Route>
     </Routes>
     

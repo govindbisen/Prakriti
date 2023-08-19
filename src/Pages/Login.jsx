@@ -53,7 +53,7 @@ function Login() {
         <button type="submit">Login</button>
       </form>
       <p>
-        Don't have an account? <Link to="/authentication/signup">Register here</Link>
+        Don't have an account? <Link to="authentication/signup">Register here</Link>
       </p>
     </div>
   );

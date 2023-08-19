@@ -8,19 +8,16 @@ function AuthPage() {
           <nav>
             <ul>
               <li>
-                <Link to="login">Login</Link>
+              <Link to="signup">Sign Up</Link>
               </li>
-              <li>
-                <Link to="signup">Sign Up</Link>
+              <li> 
+              <Link to="login">Login</Link>
               </li>
             </ul>
           </nav>
-        
         </div>
       </main>
 <Outlet/>
-
-   
   </>;
 }
 
