@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Login from "./Login";
-import Register from "./Register";
+import React from "react";
 import { Outlet, Link } from 'react-router-dom';
 
 function AuthPage() {
@@ -17,9 +15,11 @@ function AuthPage() {
               </li>
             </ul>
           </nav>
-          <Outlet />
+        
         </div>
       </main>
+<Outlet/>
+
    
   </>;
 }
