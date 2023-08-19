@@ -2,9 +2,13 @@ import React from 'react'
 // import logo from "./assets/prakriti.jpeg";
 import logo from "../assets/prakriti.jpeg"
 import { Link } from 'react-router-dom'
+import useAuth from '../CustomHook/useAuth';
 
 function Navbar() {
-    const navigationLinks = [
+
+  const isAuthenticated = useAuth();
+
+    const navigationLinks = isAuthenticated ? [
         { to: '/about', text: 'About' },
         { to: '/', text: 'Home' },
         { to: '/blog', text: 'Blog' },
@@ -12,8 +16,10 @@ function Navbar() {
         { to: '/test', text: 'Test' },
         { to: '/contact', text: 'Contact' },
         { to: '/donate', text: 'Donate' },
-        { to: '/authentication', text: 'Login/SignUP' },
-      ];
+      
+      ]:[  { to: '/authentication', text: 'Login/SignUP' },];
+
+
   return (
     <nav>
     <div className="logo-head">

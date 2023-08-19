@@ -10,8 +10,11 @@ import AuthPage from '../Pages/AuthPage';
 import Donate from "../Pages/Donate";
 import Register from '../Pages/Register';
 import LoginForm from "../Pages/Login"
+import useAuth from '../CustomHook/useAuth';
 
 function NavRoute() {
+  const isAuthenticated = useAuth();
+ 
     const routes = [
         { path: '/about', element: <About /> },
         { path: '/', element: <Home /> },
@@ -21,18 +24,26 @@ function NavRoute() {
         { path: '/contact', element: <Contact /> },
         { path: '/donate', element: <Donate /> },
         { path: '/authentication', element: <AuthPage /> },
+        { path: '*', element: <AuthPage /> },
       ];
+
+      
   return (
     <>
-    <Routes>
-    {routes.map((route) => (
-        <Route key={route.path} path={route.path} element={route.element} />
-      ))}
+    {isAuthenticated && <Routes>{routes.map((route) => (
+    <Route key={route.path} path={route.path} element={route.element} />
+  ))}
+</Routes>}
+
+    {!isAuthenticated &&  <Routes>
       <Route path="/authentication" element={<AuthPage />}>
         <Route path="login" element={<LoginForm />} />
         <Route path="signup" element={<Register />} />
       </Route>
-    </Routes>
+    </Routes>}
+   
+
+   
     
     </>
   )
