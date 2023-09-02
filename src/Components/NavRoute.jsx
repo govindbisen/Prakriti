@@ -30,7 +30,7 @@ function NavRoute() {
       ))}
       <Route path="/authentication" element={<AuthPage />}>
          <Route path="signup" element={<Register />} />
-        <Route path="login" element={<LoginForm />} />
+         <Route path="login" element={<LoginForm />} />
       </Route>
     </Routes>
     
