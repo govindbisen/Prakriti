@@ -28,12 +28,12 @@ function NavRoute() {
     {routes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
-      <Route path="/authentication" element={<AuthPage />}>
+      <Route  path="/authentication" element={<AuthPage />}>
+         <Route index path="signup" element={<Register />} />
          <Route path="signup" element={<Register />} />
          <Route path="login" element={<LoginForm />} />
       </Route>
     </Routes>
-    
     </>
   )
 }

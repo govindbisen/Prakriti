@@ -4,7 +4,7 @@ import { Outlet, Link } from 'react-router-dom';
 function AuthPage() {
   return <>
    <main>
-        <div className="form-container">
+        <nav className="form-container">
           <nav>
             <ul>
               <li>
@@ -15,7 +15,7 @@ function AuthPage() {
               </li>
             </ul>
           </nav>
-        </div>
+        </nav>
       </main>
 <Outlet/>
   </>;
